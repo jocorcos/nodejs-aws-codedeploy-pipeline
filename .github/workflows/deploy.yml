@@ -24,6 +24,6 @@ jobs:
       run: |
         aws deploy create-deployment \
         --application-name OPAS_TMS_TEST \
-        --deployment-group-name OPAS_TMS_TEST-GROUP \
+        --deployment-group-name OPAS_TMS_TEST_GROUP \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
